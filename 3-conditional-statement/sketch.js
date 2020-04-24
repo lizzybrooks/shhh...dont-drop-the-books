@@ -19,14 +19,14 @@ function setup() {
 }
 
 function draw(){
-	background(0,0,128);
+	background(0,0,0);
   earth
 
   me.drawMe();
   me.moveMe();
 
   if (frameCount % 35 == 0) {
-      let  b = new Ball(width, random(0,height), -3);
+      let  b = new Ball(random(50,450), 50, -3);
       balls.push(b);
       console.log(balls); //print the balls array to the console
     }
@@ -104,8 +104,8 @@ class Ball {
 
 	//update the location of the ball, so it moves across the screen
 	moveBall(){
-		this.x = this.x+ this.speed;
-		this.y = this.y+.75;
+		//this.x = this.x+ this.speed;
+		this.y = this.y+.250;
 	}
 
 	//if the ball hits the person, change the speed value to negative (send it in the opposite direction)
