@@ -10,7 +10,7 @@ function preload() {
 //
 //   //create an animation from a sequence of numbered images
 //   //pass the first and the last file name and it will try to find the ones in between
-  frog = loadAnimation('sprites/frog001.png', 'sprites/frog015.png');
+  frog = loadAnimation('sprites/librarian001.png', 'sprites/librarian033.png');
 
 }
 

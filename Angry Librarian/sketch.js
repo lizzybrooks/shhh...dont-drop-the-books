@@ -17,7 +17,7 @@
   }
 
   function setup() {
-    createCanvas(800, 700);
+    createCanvas(900, 700);
   }
 
   function draw() {
@@ -25,6 +25,6 @@
 
     //specify the animation instance and its x,y position
     //animation() will update the animation frame as well
-    animation(librarian, 300, 300);
+    animation(librarian, 400, 310);
 
   }
