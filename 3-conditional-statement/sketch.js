@@ -63,13 +63,13 @@ class Avatar {
 	}
 
 	moveMe(){
-    if (keyIsDown(UP_ARROW)) { //if you hold the up arrow, move up by speed
+  //  if (keyIsDown(UP_ARROW)) { //if you hold the up arrow, move up by speed
        this.y -= this.speed;
-    }
+  //  }
 
-    if (keyIsDown(DOWN_ARROW)) { // if you hold the down arrow, move down by speed
+  //  if (keyIsDown(DOWN_ARROW)) { // if you hold the down arrow, move down by speed
         this.y += this.speed;
-    }
+//    }
     if (keyIsDown(RIGHT_ARROW)) {
       this.x += this.speed;
     }
@@ -111,7 +111,7 @@ class Ball {
 	//if the ball hits the person, change the speed value to negative (send it in the opposite direction)
   	bounceBall(){
     		if (this.x >= me.x-25 && this.x <= me.x+25 && this.y > me.y-70 && this.y < me.y+70){
-      			this.speed = -this.speed;
+      			this.x=-10;
             mySound.play();
     		}
   	}
