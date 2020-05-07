@@ -12,36 +12,17 @@
 
   function setup() {
     createCanvas(900, 700);
-    // button = createButton('try again');
-    // button.size(250,60);
-    // button.position(300, 200);
-    // button.style("font-size", "35px");
-    // button.style("font-family", "Verdana-Bold ");
-<<<<<<< Updated upstream
-    // resetSketch();
-    var button = createButton ("reset");
-    // button.mousePressed(resetSketch);
 
-  }
-
-  // function resetSketch(){
-  //
-  // }
-
-function mouseClicked(){
-Program.restart(); 
-
-}
-=======
+    resetSketch();
     var button = createButton ("reset");
     button.mousePressed(resetSketch);
 
   }
 
   function resetSketch(){
-    rect(100,100,100,100);
+
   }
->>>>>>> Stashed changes
+
 
   function draw() {
     background(200, 255, 255);
@@ -49,5 +30,14 @@ Program.restart();
     textSize(100);
     textFont('GillSans-Bold ');
     text('SHHHHHHH!!', 100, 100);
+    textSize(40);
+    textFont('Verdana-Bold');
+    text('try again',620,670);
+    strokeWeight(6);
+    line(830,670,880,685);
+    line(875,675,880,685);
+    line(870,690,880,685);
+
+
 
   }
