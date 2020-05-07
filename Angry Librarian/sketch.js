@@ -17,14 +17,20 @@
     // button.position(300, 200);
     // button.style("font-size", "35px");
     // button.style("font-family", "Verdana-Bold ");
-    var button = createButton ("restart");
-    button.mousePressed("resetSketch");
+    // resetSketch();
+    var button = createButton ("reset");
+    // button.mousePressed(resetSketch);
 
   }
 
-  function resetSketch(){
+  // function resetSketch(){
+  //
+  // }
 
-  }
+function mouseClicked(){
+Program.restart(); 
+
+}
 
   function draw() {
     background(200, 255, 255);
