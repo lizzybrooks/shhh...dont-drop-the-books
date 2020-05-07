@@ -6,8 +6,10 @@ let me;
 let mySound
 
 function preload() {
-  soundFormats('mp3', 'ogg', 'wav');
-  mySound = loadSound('levelup.wav')
+  //soundFormats('mp3', 'ogg', 'wav');
+  //mySound = loadSound('levelup.wav')
+  soundFormats('mp3', 'wav');
+  mySound = loadSound('boing1.mp3');
 }
 
 function setup() {
@@ -20,10 +22,11 @@ function setup() {
 
 function draw(){
 	background(0,0,0);
-  earth
+  //earth
 
   me.drawMe();
   me.moveMe();
+  mySound.play();
 
   if (frameCount % 35 == 0) {
       let  b = new Ball(random(50,450), 50, -3);
@@ -100,6 +103,7 @@ class Ball {
       strokeWeight(3);
     	fill("orange");
 		  ellipse(this.x,this.y,20,20);
+
 	}
 
 	//update the location of the ball, so it moves across the screen
@@ -110,9 +114,10 @@ class Ball {
 
 	//if the ball hits the person, change the speed value to negative (send it in the opposite direction)
   	bounceBall(){
-    		if (this.x >= me.x-25 && this.x <= me.x+25 && this.y > me.y-70 && this.y < me.y+70){
-      			this.x=-10;
-            mySound.play();
+
+          if (this.x >= me.x-25 && this.x <= me.x+25 && this.y > me.y-70 && this.y < me.y+70){
+                this.x=-10;
+
     		}
   	}
 
