@@ -17,6 +17,7 @@
     // button.position(300, 200);
     // button.style("font-size", "35px");
     // button.style("font-family", "Verdana-Bold ");
+<<<<<<< Updated upstream
     // resetSketch();
     var button = createButton ("reset");
     // button.mousePressed(resetSketch);
@@ -31,6 +32,16 @@ function mouseClicked(){
 Program.restart(); 
 
 }
+=======
+    var button = createButton ("reset");
+    button.mousePressed(resetSketch);
+
+  }
+
+  function resetSketch(){
+    rect(100,100,100,100);
+  }
+>>>>>>> Stashed changes
 
   function draw() {
     background(200, 255, 255);
